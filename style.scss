@@ -1,0 +1,23 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  
+}
+@for $i from 1 through 255 {
+//  $width: percentage(1 / $i)*10 ;
+  .col-#{$i}{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: (random(255))+px;
+    background-color: rgb(102,$i,$i);
+    color: rgb(102,$i,$i);
+    margin: 0 0.5px;
+    width: 1%;
+    font-size: 1px;
+  }
+}
